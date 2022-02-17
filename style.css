@@ -1,0 +1,31 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(12, 73, 52);
+}
+
+
+#div-body{
+    padding: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL67MmZoulRKHxIAitNemPbYiCGDzNEbESmQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 100% 40rem;
+   
+};
+
+.h2-show{ 
+    color: #fff;
+    
+}
+#div-body select,#div-body input{
+border: #fff 1px solid;
+}
+
+
+#first-option-select{
+    color: #fff;
+  
+}
