@@ -2,7 +2,6 @@
 
 // https://api.tvmaze.com/shows/82/episodes
 
-
 ///////getting API
 
 const getApi = async () => {
@@ -16,11 +15,9 @@ const getApi = async () => {
   }
 };
 
-
 const ul = document.createElement("ul");
 const select = document.querySelector("#select-div");
 const optionTwo = document.querySelector("#second-option-select");
-
 
 /////getting carts if film
 const getShows = (Data) => {
@@ -43,7 +40,6 @@ const getShows = (Data) => {
     const icone2 = document.createElement("i");
     const spanSummary = document.createElement("span");
 
-    
     p.textContent = `(${Name} -season${season}) click image to see summary`;
 
     spanSummary.innerHTML = summary;
@@ -69,11 +65,11 @@ const getShows = (Data) => {
     //////class of variables
     ul.className = "class-ul";
     li.className = "class-li";
-    p.className="class-Name"
+    p.className = "class-Name";
     icone1.className = "fa-solid fa-circle-play";
     icone2.className = "fa-solid fa-clock";
     spanSummary.classList.add("span-image-none");
-    
+
     ///////////////making options of select
     const newOption = document.createElement("option");
     newOption.textContent = `S0${data.season}-E0${data.number}-${data.name}`;
@@ -91,10 +87,6 @@ const getShows = (Data) => {
       }
     });
 
-
-
-    
-
     ///style
     myImage.className = "cart-image";
 
@@ -109,21 +101,16 @@ const getShows = (Data) => {
 
 getApi();
 
-
-
-///////making input search 
+///////making input search
 const inputSearch = document.querySelector("#search-input");
-
 
 inputSearch.addEventListener("keyup", function (e) {
   const valueSearch = e.target.value.toLowerCase();
   const allShows = document.querySelectorAll("li");
   console.log(allShows);
   for (let allShow of allShows) {
-   
-    const valueShow=allShow.querySelector("p").textContent
+    const valueShow = allShow.querySelector("p").textContent;
     if (valueShow.includes(valueSearch)) {
-      
       allShow.style.display = "initial";
     } else {
       allShow.style.display = "none";
@@ -131,19 +118,14 @@ inputSearch.addEventListener("keyup", function (e) {
   }
 });
 
-
 ///////////////making summary
 
 ul.addEventListener("click", (e) => {
- if(e.target instanceof HTMLImageElement){
+  if (e.target instanceof HTMLImageElement) {
     // console.log(e.target.nextElementSibling);
     e.target.nextElementSibling.classList.toggle("span-image");
-   e.target.classList.toggle("size-image")
-  
- }
+    e.target.classList.toggle("size-image");
+  }
 });
 
-
 ////finished🌚
-
-
