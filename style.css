@@ -1,143 +1,153 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    background-color: rgb(12, 73, 52);
+* {
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(12, 73, 52);
 }
 
-
-#section-body{
-    padding: 100px;
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL67MmZoulRKHxIAitNemPbYiCGDzNEbESmQ&usqp=CAU');
-    background-repeat: no-repeat;
-    background-size: 100% 40rem;
-   
-};
-
-
-.cart-image{
-    width: 50px;
-    height: 50px;
+#section-body {
+  padding: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL67MmZoulRKHxIAitNemPbYiCGDzNEbESmQ&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: 100% 40rem;
 }
 
-.class-ul{
-    padding: 20px;
-    margin: 50px;
-    display: flex;
-    gap: 30px;
-     flex-wrap: wrap;
+.class-ul {
+  padding: 20px;
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.class-li{
-
-    display: flex;
-    flex-direction: column;
-
+.class-li {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.class-li p{
-    padding: 10px;
-    color: #fff;
-    margin: 5px;
-    text-align: center;
+.class-li p {
+  padding: 10px;
+  color: #fff;
+  margin: 5px;
+  text-align: center;
 }
-.class-li i{
-     margin:4px ;
+.class-li i {
+  margin: 4px;
 }
- .class-li a{
-
-     margin:-0.5px ;
- }
- 
- .fa-circle-play , .fa-clock{
- color: #fff;
- font-size: 10px;
-
- }
- 
- #search-input {
-     color: #fff;
-     border: #fff 1px solid;
- }
- #select-div{
-     color: #fff;
-     border: #fff 1px solid;
- }
- #show{
-     padding: 3px;
-     color: #fff;
-     border: #fff 1px solid;
+.class-li a {
+  margin: -0.5px;
 }
 
-.cart-image{
-    border: #fff 1px dotted;
+.fa-circle-play,
+.fa-clock {
+  color: #fff;
+  font-size: 10px;
 }
 
-
-.span-image-none{
-    display: none;
+#search-input {
+  color: #fff;
+  border: #fff 1px solid;
 }
-.span-image{
-    display: block;
-    width: 15rem;
-
-     
+#select-div {
+  color: #fff;
+  border: #fff 1px solid;
+}
+#show {
+  padding: 3px;
+  color: #fff;
+  border: #fff 1px solid;
 }
 
-.class-Name{
-    width: 12rem;
+#show:hover {
+  transform: translateY(-20px);
+  font-size: 2rem;
+}
+#search-input:hover {
+  transform: translateY(-20px);
+  /* border-radius: 10rem; */
+  font-size: 1rem;
 }
 
+#select-div:hover {
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+}
+
+.cart-image {
+  width: 10rem;
+  height: 8rem;
+
+  border: #fff 1px solid;
+  box-shadow: 8px -6px 14px 10px rgba(112, 214, 112, 0.2);
+}
+.cart-image:hover {
+  width: 20rem;
+}
+
+.span-image-none {
+  display: none;
+}
+.span-image {
+  display: block;
+  width: 15rem;
+}
+
+.class-Name {
+  width: 12rem;
+}
+
+.size-image {
+  max-height: 20%;
+  width: 15rem;
+  height: 12rem;
+}
 
 /*  media */
-@media (max-width:900px){
-#search-input{
-font-size: 10px;
-}
-#select-div{
-font-size:10px;
-}
- #show{
-font-size: 10px;
- }
-}
-
-@media (max-width:700px){
-#search-input{
-font-size: 8px;
-}
-#select-div{
-font-size:8px;
-}
- #show{
-font-size: 8px;
- }
-}
-@media (max-width:550px){
-#search-input{
-font-size: 5px;
-}
-#select-div{
-font-size:5px;
-}
- #show{
-font-size: 5px;
- }
+@media (max-width: 900px) {
+  #search-input {
+    font-size: 10px;
+  }
+  #select-div {
+    font-size: 10px;
+  }
+  #show {
+    font-size: 10px;
+  }
 }
 
-@media (max-width:450px){
-#search-input{
-font-size: 3px;
+@media (max-width: 700px) {
+  #search-input {
+    font-size: 8px;
+  }
+  #select-div {
+    font-size: 8px;
+  }
+  #show {
+    font-size: 8px;
+  }
 }
-#select-div{
-font-size:3px;
-}
- #show{
-font-size: 3px;
- }
+@media (max-width: 550px) {
+  #search-input {
+    font-size: 5px;
+  }
+  #select-div {
+    font-size: 5px;
+  }
+  #show {
+    font-size: 5px;
+  }
 }
 
-
+@media (max-width: 450px) {
+  #search-input {
+    font-size: 3px;
+  }
+  #select-div {
+    font-size: 3px;
+  }
+  #show {
+    font-size: 3px;
+  }
+}
