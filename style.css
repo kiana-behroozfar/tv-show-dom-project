@@ -5,7 +5,7 @@
 }
 
 
-#div-body{
+#section-body{
     padding: 100px;
     display: flex;
     text-align: center;
@@ -16,16 +16,128 @@
    
 };
 
-.h2-show{ 
-    color: #fff;
-    
+
+.cart-image{
+    width: 50px;
+    height: 50px;
 }
-#div-body select,#div-body input{
-border: #fff 1px solid;
+
+.class-ul{
+    padding: 20px;
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+     flex-wrap: wrap;
+}
+
+.class-li{
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 
-#first-option-select{
+.class-li p{
+    padding: 10px;
     color: #fff;
-  
+    margin: 5px;
+    text-align: center;
 }
+.class-li i{
+     margin:4px ;
+}
+ .class-li a{
+
+     margin:-0.5px ;
+ }
+ 
+ .fa-circle-play , .fa-clock{
+ color: #fff;
+ font-size: 10px;
+
+ }
+ 
+ #search-input {
+     color: #fff;
+     border: #fff 1px solid;
+ }
+ #select-div{
+     color: #fff;
+     border: #fff 1px solid;
+ }
+ #show{
+     padding: 3px;
+     color: #fff;
+     border: #fff 1px solid;
+}
+
+.cart-image{
+    border: #fff 1px dotted;
+}
+
+
+.span-image-none{
+    display: none;
+}
+.span-image{
+    display: block;
+    width: 15rem;
+
+     
+}
+
+.class-Name{
+    width: 12rem;
+}
+
+
+/*  media */
+@media (max-width:900px){
+#search-input{
+font-size: 10px;
+}
+#select-div{
+font-size:10px;
+}
+ #show{
+font-size: 10px;
+ }
+}
+
+@media (max-width:700px){
+#search-input{
+font-size: 8px;
+}
+#select-div{
+font-size:8px;
+}
+ #show{
+font-size: 8px;
+ }
+}
+@media (max-width:550px){
+#search-input{
+font-size: 5px;
+}
+#select-div{
+font-size:5px;
+}
+ #show{
+font-size: 5px;
+ }
+}
+
+@media (max-width:450px){
+#search-input{
+font-size: 3px;
+}
+#select-div{
+font-size:3px;
+}
+ #show{
+font-size: 3px;
+ }
+}
+
+
