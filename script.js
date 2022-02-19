@@ -91,6 +91,10 @@ const getShows = (Data) => {
       }
     });
 
+
+
+    
+
     ///style
     myImage.className = "cart-image";
 
@@ -132,8 +136,10 @@ inputSearch.addEventListener("keyup", function (e) {
 
 ul.addEventListener("click", (e) => {
  if(e.target instanceof HTMLImageElement){
-    console.log(e.target.nextElementSibling);
+    // console.log(e.target.nextElementSibling);
     e.target.nextElementSibling.classList.toggle("span-image");
+   e.target.classList.toggle("size-image")
+  
  }
 });
 
